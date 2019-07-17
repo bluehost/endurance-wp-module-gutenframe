@@ -33,7 +33,7 @@ function eig_module_gutenframe_register() {
  * @return void
  */
 function eig_module_gutenframe_load() {
-	if ( ! class_exists( 'EIG_Module_Gutenframe' ) ) {
+	if ( class_exists( 'EIG_Module_Gutenframe' ) ) {
 		new EIG_Module_Gutenframe();
 	}
 }
