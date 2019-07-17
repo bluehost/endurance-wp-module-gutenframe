@@ -70,7 +70,7 @@ class EIG_Module_Gutenframe {
 					}
 				}
 				/* Override Menu Items: Fullscreen and Manage All Reusable Blocks Menu Items */
-				.components-popover__content > div:first-of-type > div[role="menu"] > button:nth-of-type(2),
+				.components-popover__content > div:first-of-type > div[role="menu"] > button:nth-of-type(3),
 				.components-popover__content a[href="edit.php?post_type=wp_block"] {
 					display: none !important;
 				}
