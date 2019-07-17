@@ -1,7 +1,7 @@
 <?php
 
 if ( function_exists( 'add_action' ) ) {
-	add_action( 'after_theme_setup', 'eig_module_gutenframe_register' );
+	add_action( 'after_setup_theme', 'eig_module_gutenframe_register' );
 }
 /**
  * Register endurance-wp-module-gutenframe
