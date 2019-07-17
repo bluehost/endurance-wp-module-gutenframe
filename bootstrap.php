@@ -1,5 +1,7 @@
 <?php
-
+/**
+ * Only Initialize if WordPress Is Available.
+ */
 if ( function_exists( 'add_action' ) ) {
 	add_action( 'after_setup_theme', 'eig_module_gutenframe_register' );
 }
@@ -32,8 +34,18 @@ function eig_module_gutenframe_register() {
  *
  * @return void
  */
+/**
+ * Instantiate endurance-wp-module-gutenframe main class.
+ *
+ * @return void
+ */
 function eig_module_gutenframe_load() {
-	if ( class_exists( 'EIG_Module_Gutenframe' ) ) {
+	if ( 
+		class_exists( 'EIG_Module_Gutenframe' ) 
+		&& is_user_logged_in()
+		&& current_user_can( 'edit_posts' )
+	    && is_admin() 
+   	) {
 		new EIG_Module_Gutenframe();
 	}
 }
