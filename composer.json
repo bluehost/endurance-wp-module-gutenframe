@@ -22,7 +22,7 @@
             "bootstrap.php"
         ]
     },
-    "require": {
+    "require-dev": {
         "bluehost/wp-php-standards": "^1.1"
     },
     "scripts": {
