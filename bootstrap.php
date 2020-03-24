@@ -22,9 +22,17 @@ function eig_module_gutenframe_register() {
 	);
 
 	if ( ! defined( 'EIG_GUTENFRAME_PYM_URL' ) ) {
+		$base_url = defined( 'BLUEHOST_PLUGIN_URL' ) ? BLUEHOST_PLUGIN_URL : '';
+		if ( empty( $base_url ) ) {
+			$legacy = defined( 'MM_BASE_URL' ) ? MM_BASE_URL : '';
+			if ( ! empty( $legacy ) ) {
+				$base_url = $legacy;
+			}
+		
+		}
 		define(
 			'EIG_GUTENFRAME_PYM_URL',
-			trailingslashit( MM_BASE_URL ) . 'vendor/bluehost/endurance-wp-module-gutenframe/assets/pym.js'
+			trailingslashit( $base_url ) . 'vendor/bluehost/endurance-wp-module-gutenframe/assets/pym.js'
 		);
 	}
 }
