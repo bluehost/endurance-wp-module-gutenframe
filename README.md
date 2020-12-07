@@ -2,7 +2,7 @@
     <img src="https://bluehost.com/resources/logos/endurance.svg" alt="Endurance Logo" title="Endurance" align="right" height="42" />
 </a>
 
- # Endurance Gutenframe WordPress Module
+ # Gutenframe WordPress Module
  
  A proof-of-concept for preparing the WordPress Block Editor (Gutenberg) to be loaded fullscreen inside an `<iframe>`.
  
