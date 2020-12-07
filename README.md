@@ -1,3 +1,7 @@
+ <a href="https://endurance.com/" target="_blank">
+    <img src="https://bluehost.com/resources/logos/endurance.svg" alt="Endurance Logo" title="Endurance" align="right" height="42" />
+</a>
+
  # Endurance Gutenframe WordPress Module
  
  A proof-of-concept for preparing the WordPress Block Editor (Gutenberg) to be loaded fullscreen inside an `<iframe>`.
@@ -5,6 +9,10 @@
  ## Installation
  
  ### 1. Add the Bluehost Satis to your `composer.json`.
+ 
+  ```bash
+ composer config repositories.bluehost composer https://bluehost.github.io/satis
+ ```
  
  ### 2. Require the `bluehost/endurance-wp-module-gutenframe` package.
  
